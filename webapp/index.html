@@ -1,0 +1,169 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Délais de résa</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>
+    Délai de réservation
+    </h1>
+
+<div id="delai-resa" >
+	<div class="inline">
+		<table>
+			<thead>
+				<tr>
+					<th class="header">&nbsp;</th>
+					<th class="morning left first">08h30</th>
+					<th class="noon">&nbsp;</th>
+					<th class="afternoon right last">18h30</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="day">
+						Lundi
+					</td>
+					<td><div class="first gray" tooltip="Fermeture hebdomadaire">&nbsp;</div></td>
+					<td><div class="middle gray" tooltip="Fermeture hebdomadaire">&nbsp;</div></td>
+					<td><div class="last gray" tooltip="Fermeture hebdomadaire">&nbsp;</div></td>
+				</tr>
+				<tr>
+					<td class="day">
+						Mardi
+					</td>
+					<td><div class="first green" tooltip="1 à 2 jours">&nbsp;</div></td>
+					<td><div class="middle gray" tooltip="Pause déjeuner">&nbsp;</div></td>
+					<td><div class="last green" tooltip="1 à 2 jours">&nbsp;</div></td>
+				</tr>
+				<tr>
+					<td class="day">
+						Mercredi
+					</td>
+					<td><div class="first green" tooltip="1 à 2 jours">&nbsp;</div></td>
+					<td><div class="middle gray" tooltip="Pause déjeuner">&nbsp;</div></td>
+					<td><div class="last green" tooltip="1 à 2 jours">&nbsp;</div></td>
+				</tr>
+				<tr>
+					<td class="day">
+						Jeudi
+					</td>
+					<td><div class="first green" tooltip="1 à 2 jours">&nbsp;</div></td>
+					<td><div class="middle gray" tooltip="Pause déjeuner">&nbsp;</div></td>
+					<td><div class="last green" tooltip="1 à 2 jours">&nbsp;</div></td>
+				</tr>
+				<tr>
+					<td class="day">
+						Vendredi
+					</td>
+					<td><div class="first green" tooltip="1 à 2 jours">&nbsp;</div></td>
+					<td><div class="middle gray" tooltip="Pause déjeuner">&nbsp;</div></td>
+					<td><div class="last green" tooltip="1 à 2 jours">&nbsp;</div></td>
+				</tr>
+				<tr>
+					<td class="day">
+						Samedi
+					</td>
+					<td><div class="first red " tooltip="Jusqu'à 4 semaines">&nbsp;</div></td>
+					<td><div class="middle gray" tooltip="Pause déjeuner">&nbsp;</div></td>
+					<td><div class="last red" tooltip="Jusqu'à 4 semaines">&nbsp;</div></td>
+				</tr>
+				
+				<tr>
+					<td class="day">
+						Dimanche
+					</td>
+					<td><div class="first red" tooltip="Jusqu'à 4 semaines">&nbsp;</div></td>
+					<td><div class="middle gray" tooltip="Pause déjeuner">&nbsp;</div></td>
+					<td><div class="last red" tooltip="Jusqu'à 4 semaines">&nbsp;</div></td>
+				</tr>
+				
+				<tr>
+					<td class="day">
+						Jours fériés
+					</td>
+					<td><div class="first red" tooltip="Jusqu'à 4 semaines">&nbsp;</div></td>
+					<td><div class="middle gray" tooltip="Pause déjeuner">&nbsp;</div></td>
+					<td><div class="last red" tooltip="Jusqu'à 4 semaines">&nbsp;</div></td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
+
+	<div class="inline">
+		<h2>Optimisez votre temps !</h2>
+		<p>Il y a forte affluence pour effectuer les sauts en tandems le <b>week-end</b> ainsi que les <b>jours fériés</b>. Prévoyez environ <b>3 semaines de délai</b>.</p>
+		<p>Par contre, en <b>semaine</b>, vous pourrez effectuer votre saut avec <b>1 à 2 jours</b> seulement !</p>
+	</div>
+	<br class="clearBoth" />
+</div>
+<!--
+    
+    
+    <div class="head row hbox" >
+        <div class="cell red first">&nbsp;</div>
+        <div class="cell medium">&nbsp;</div>
+        <div class="cell green last">&nbsp;</div>
+    </div>
+    <div class="row hbox" >
+        <div class="cell red first">&nbsp;</div>
+        <div class="cell medium">&nbsp;</div>
+        <div class="cell green last">&nbsp;</div>
+    </div>
+    
+    <div class="table">
+        <div class="row">
+            <div class="hcell">&nbsp;</div>
+            <div class="hcell">Lundi</div>
+            <div class="hcell">Mardi</div>
+            <div class="hcell">Mercredi</div>
+            <div class="hcell">Jeudi</div>
+            <div class="hcell">Vendredi</div>
+            <div class="hcell">Samedi</div>
+            <div class="hcell">Dimanche</div>
+        </div>
+        <div class="row">
+            <div class="hcell">09h-12h</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+        </div>
+        <div class="row">
+            <div class="hcell">13h30-16h00</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+        </div>
+        <div class="row">
+            <div class="hcell">15h30-12h</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+            <div class="cell">&nbsp;</div>
+        </div>
+    </div>
+-->
+    
+</body>
+</html>

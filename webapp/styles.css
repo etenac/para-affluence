@@ -1,0 +1,105 @@
+#delai-resa div.inline { float:left;
+}
+#delai-resa .clearBoth { clear:both; }
+
+#delai-resa table { 
+  border-collapse: collapse; 
+  background-color: #d3d3d3;
+  border-radius: 0 5px 0 5px;
+  overflow: hidden;
+  width:350px;
+}
+/* Zebra striping */
+#delai-resa tr:nth-of-type(odd) { 
+  background-color: #eee; 
+}
+
+#delai-resa th { 
+  background: #d3d3d3;
+  font-weight: bold; 
+}
+#delai-resa td, 
+#delai-resa th { 
+  padding: 5px 0; 
+  text-align: left; 
+  width: 100px;
+  height: 25px;
+}
+
+#delai-resa .day { 
+  font-weight: bold; 
+  padding-left: 5px;
+}
+
+#delai-resa td div {
+    height: 25px;
+    opacity: 0.7;
+}
+
+#delai-resa td div:hover {
+    opacity: 1;
+}
+
+#delai-resa .left {
+    text-align: left;
+	padding-left: 5px;
+}
+#delai-resa .right {
+    text-align: right;
+	padding-right: 5px;
+}
+#delai-resa .morning 	{  width: 30%; }
+#delai-resa .noon 	 	{  width: 7%;  }
+#delai-resa .afternoon 	{  width: 37%; }
+
+
+#delai-resa .red   { background: #FF0000;}
+#delai-resa .green { background: #008000;}
+#delai-resa .gray  { background: #404048;}
+
+#delai-resa .first {
+    border-radius: 5px 0 0 5px;
+	border-right: 1px solid #ccc;
+}
+
+#delai-resa .middle {
+    border-radius: 0;
+}
+
+#delai-resa .last {
+    border-radius: 0 5px 5px 0;
+	border-left: 1px solid #ccc;
+	margin-right:5px;
+}
+
+#delai-resa [tooltip]:before {
+    /* needed - do not touch */
+    content: attr(tooltip);
+    position: absolute;
+    opacity: 0;
+    
+    /* customizable */
+    transition: all 0.15s ease;
+    padding: 5px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px silver;    
+}
+
+#delai-resa [tooltip]:hover:before {
+    /* needed - do not touch */
+    opacity: 1;
+    
+    /* customizable */
+    background: rgba(0,0,0,0.5);
+    color: #ffffff;
+    text-align: center;
+
+    margin-top: -30px;
+    margin-left: 10px;    
+    width: 200px;
+}
+
+#delai-resa [tooltip]:not([tooltip-persistent]):before {
+    pointer-events: none;
+}
